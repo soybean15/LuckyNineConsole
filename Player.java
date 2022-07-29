@@ -17,16 +17,24 @@ public class Player {
        return total<6;
     }
 
+    int getTotal(){
+        return total;
+    }
+
+    int getNum(){
+        return num;
+    }
+
 
     void showHands(){
 
-        if (num == 1 ){
-            System.out.println("Your hands");
+        if (num == 5 ){
+            System.out.print("Your hands");
         }else {
-            System.out.println("Player "+num+" hands");
+            System.out.print("Player "+num+" hands");
         }
 
-        System.out.println("Total Hands: "+hand.returnTotal());
+        System.out.println(" [Total: "+hand.returnTotal()+"]");
         hand.printHand();
     }
 }
